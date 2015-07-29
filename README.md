@@ -1,8 +1,9 @@
 # XRoad
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/x_road`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Build Status](https://travis-ci.org/jannosiilbek/x_road.svg)](https://travis-ci.org/jannosiilbek/x_road)
+[![Code Climate](https://codeclimate.com/github/jannosiilbek/x_road/badges/gpa.svg)](https://codeclimate.com/github/jannosiilbek/x_road)
 
-TODO: Delete this and the text above, and describe your gem
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/x_road`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 ## Installation
 
