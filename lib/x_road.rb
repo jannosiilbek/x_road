@@ -23,7 +23,7 @@ module XRoad
     attr_accessor :log_level
 
     def initialize
-      log_level = :info
+      @log_level = :info
     end
   end
 
