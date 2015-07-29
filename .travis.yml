@@ -1,10 +1,8 @@
 language: ruby
 rvm:
- - 'ree'
- - '1.9.2'
- - '1.9.3'
- - '2.1.2'
  - '2.2.0'
+ - '1.9.3'
+ - 'ree'
 
 before_install:
   'gem install bundler'
