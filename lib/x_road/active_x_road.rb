@@ -4,11 +4,11 @@ module XRoad
       id = UUIDTools::UUID.random_create.to_s
       id.delete! '-'
       {
-        "xtee:id": id,
-        "xtee:nimi": service,
-        "xtee:asutus": XRoad.configuration.consumer,
-        "xtee:andmekogu": producer,
-        "xtee:isikukood": user_id
+        "xtee:id" => id,
+        "xtee:nimi" => service,
+        "xtee:asutus" => XRoad.configuration.consumer,
+        "xtee:andmekogu" => producer,
+        "xtee:isikukood" => user_id
       }
     end
 
