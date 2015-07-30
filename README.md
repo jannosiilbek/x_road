@@ -25,6 +25,8 @@ Or install it yourself as:
 
 ## Usage
 
+```ruby
+
 require 'x_road'
 
 XRoad.configure do |config|
@@ -36,6 +38,8 @@ XRoad.configure do |config|
 end
 
 lms = XRoad::MyServiceName.find('1234567890')
+
+```
 
 ## Contributing
 
