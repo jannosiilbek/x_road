@@ -25,6 +25,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency 'uuidtools', '~> 2.1.5'
+  spec.add_dependency 'require_all', '~> 1.3.2'
 
   if RUBY_VERSION < '1.9'
     spec.add_dependency 'wasabi', '~> 3.4.0'
