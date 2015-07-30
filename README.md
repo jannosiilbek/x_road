@@ -5,7 +5,7 @@
 [![Test Coverage](https://codeclimate.com/github/jannosiilbek/x_road/badges/coverage.svg)](https://codeclimate.com/github/jannosiilbek/x_road/coverage)
 [![Dependency Status](https://gemnasium.com/jannosiilbek/x_road.svg)](https://gemnasium.com/jannosiilbek/x_road)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/x_road`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem simplifies the usage of X-Road services. Feel free to add new service classes.
 
 ## Installation
 
@@ -25,13 +25,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+require 'x_road'
 
-## Development
+XRoad.configure do |config|
+  config.host = 'https://<security server ip>/cgi-bin/consumer_proxy'
+  config.client_cert = '/path/server.crt'
+  config.client_key = '/path/server.key'
+  config.log_level = :info
+  config.consumer = '12345678'
+end
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+lms = XRoad::MyServiceName.find('1234567890')
 
 ## Contributing
 
