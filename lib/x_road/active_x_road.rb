@@ -16,8 +16,8 @@ module XRoad
       client = create_client(namespace)
       response = client.call(
         action,
-        soap_header: header,
-        message: body
+        :soap_header => header,
+        :message => body
       )
       response.body
     end
