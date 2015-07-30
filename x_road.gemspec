@@ -20,8 +20,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'uuidtools', '~> 2.1.5'
-  spec.add_dependency 'require_all', '~> 1.3.2'
+  spec.add_dependency 'uuidtools', '~> 2.1'
+  spec.add_dependency 'require_all', '~> 1.3'
 
   if RUBY_VERSION < '1.9'
     spec.add_dependency 'wasabi', '~> 3.3.0'
@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
     spec.add_dependency 'gyoku', '~> 1.1.0'
     spec.add_dependency 'savon', '~> 2.7.2'
   else
-    spec.add_dependency 'savon', '~> 2.11.1'
+    spec.add_dependency 'savon', '~> 2.11'
     spec.add_development_dependency 'codeclimate-test-reporter'
   end
   spec.add_development_dependency "bundler", "~> 1.8"
