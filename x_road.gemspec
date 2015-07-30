@@ -24,13 +24,13 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'require_all', '~> 1.3.2'
 
   if RUBY_VERSION < '1.9'
-    spec.add_dependency 'wasabi', '~> 3.4.0'
+    spec.add_dependency 'wasabi', '~> 3.3.0'
     spec.add_dependency 'nori', '~> 2.4.0'
-    spec.add_dependency 'httpi', '~> 2.3.0'
+    spec.add_dependency 'httpi', '~> 2.2.7'
     spec.add_dependency 'akami', '~> 1.2.2'
     spec.add_dependency 'nokogiri', '~> 1.5.10'
-    spec.add_dependency 'gyoku', '~> 1.2.3'
-    spec.add_dependency 'savon', '~> 2.10.1'
+    spec.add_dependency 'gyoku', '~> 1.1.0'
+    spec.add_dependency 'savon', '~> 2.7.2'
   else
     spec.add_dependency 'savon', '~> 2.11.1'
     spec.add_development_dependency 'codeclimate-test-reporter'
