@@ -4,6 +4,7 @@ require 'uuidtools'
 require 'savon'
 require 'x_road/active_x_road'
 require 'x_road/active_x_road2'
+require 'x_road/active_x_road3'
 require 'x_road/kpr/laekumised_maksuametist.rb'
 
 module XRoad
